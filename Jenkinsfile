@@ -7,6 +7,7 @@ pipeline {
           echo 'FirstStep'
         }
         
+        echo 'Second Step'
       }
     }
   }
