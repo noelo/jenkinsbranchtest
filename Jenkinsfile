@@ -20,5 +20,10 @@ pipeline {
         fileExists 'helloworld-1.0-SNAPSHOT.jar'
       }
     }
+    stage('Run stage') {
+      steps {
+        sh 'java -cp ./target/helloworld-1.0-SNAPSHOT.jar com.noc.test.App'
+      }
+    }
   }
 }
